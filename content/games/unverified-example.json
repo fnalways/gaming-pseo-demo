@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "exampleOnly": true,
+  "exampleNotice": "仅用于演示数据结构。所有测试数值、日期、版本、评级、审核和推荐均为虚构示例，不代表赛博朋克 2077 或 Olares 的真实表现。example.invalid 链接为占位符。禁止作为正式测试结果发布。",
+  "game": {
+    "id": "unverified-example",
+    "slug": "unverified-example",
+    "name": "下一款游戏",
+    "locale": "en",
+    "aliases": [
+      "未验证"
+    ],
+    "genres": [
+      "Coming next"
+    ],
+    "intro": "一个空白的起点：没有测试记录时，页面会明确显示尚未验证。",
+    "publication": {
+      "status": "draft",
+      "indexable": false,
+      "publishedAt": null,
+      "updatedAt": "2026-10-22T16:00:00+08:00"
+    },
+    "cover": {
+      "src": "/assets/settings.svg",
+      "alt": "Configuration illustration",
+      "width": 1200,
+      "height": 675
+    },
+    "store": {
+      "platform": "steam",
+      "appId": null,
+      "url": null
+    },
+    "seo": {
+      "title": "尚未验证示例 — Gaming Lab",
+      "description": "一个空白的起点：没有测试记录时，页面会明确显示尚未验证。",
+      "ogImage": "/assets/settings.svg"
+    },
+    "defaultDeviceId": "olares-one",
+    "currentReportByDevice": {
+      "olares-one": null,
+      "example-host-b": null
+    },
+    "relatedGameIds": [],
+    "discussionUrl": null,
+    "settingDefinitions": [
+      {
+        "key": "unitSize",
+        "label": "Unit size",
+        "group": "Gameplay",
+        "type": "enum",
+        "options": [
+          {
+            "value": "ultra",
+            "label": "Ultra"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "key": "shadowQuality",
+        "label": "Shadow quality",
+        "group": "Graphics",
+        "type": "enum",
+        "options": [
+          {
+            "value": "high",
+            "label": "High"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          }
+        ]
+      }
+    ],
+    "contentSections": []
+  },
+  "devices": [
+    {
+      "id": "olares-one",
+      "name": "Olares One",
+      "productUrl": "https://shop.olares.com/products/olares-one"
+    },
+    {
+      "id": "example-host-b",
+      "name": "Example host B (fictional)",
+      "productUrl": null
+    }
+  ],
+  "reports": [],
+  "internalAudit": {
+    "exportPolicy": "Build tools must explicitly project public fields; do not ship this bundle or internalAudit verbatim to the browser.",
+    "sources": [],
+    "evidence": []
+  }
+}

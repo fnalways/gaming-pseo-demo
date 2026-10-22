@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "exampleOnly": true,
+  "exampleNotice": "仅用于演示数据结构。所有测试数值、日期、版本、评级、审核和推荐均为虚构示例，不代表赛博朋克 2077 或 Olares 的真实表现。example.invalid 链接为占位符。禁止作为正式测试结果发布。",
+  "game": {
+    "id": "total-war-warhammer-3",
+    "slug": "total-war-warhammer-3",
+    "name": "Total War: WARHAMMER III",
+    "locale": "en",
+    "aliases": [
+      "战锤3",
+      "全面战争"
+    ],
+    "genres": [
+      "Strategy",
+      "Real-time tactics"
+    ],
+    "intro": "从单位规模到画面细节，看看策略游戏如何维护专属配置。",
+    "publication": {
+      "status": "draft",
+      "indexable": false,
+      "publishedAt": null,
+      "updatedAt": "2026-10-22T16:00:00+08:00"
+    },
+    "cover": {
+      "src": "/assets/settings.svg",
+      "alt": "Configuration illustration",
+      "width": 1200,
+      "height": 675
+    },
+    "store": {
+      "platform": "steam",
+      "appId": null,
+      "url": null
+    },
+    "seo": {
+      "title": "Total War: WARHAMMER III — Gaming Lab",
+      "description": "战锤 3 的虚构配置示例，演示游戏特有设置。",
+      "ogImage": "/assets/settings.svg"
+    },
+    "defaultDeviceId": "olares-one",
+    "currentReportByDevice": {
+      "olares-one": "report-warhammer-a",
+      "example-host-b": null
+    },
+    "relatedGameIds": [],
+    "discussionUrl": null,
+    "settingDefinitions": [
+      {
+        "key": "unitSize",
+        "label": "Unit size",
+        "group": "Gameplay",
+        "type": "enum",
+        "options": [
+          {
+            "value": "ultra",
+            "label": "Ultra"
+          },
+          {
+            "value": "large",
+            "label": "Large"
+          }
+        ]
+      },
+      {
+        "key": "shadowQuality",
+        "label": "Shadow quality",
+        "group": "Graphics",
+        "type": "enum",
+        "options": [
+          {
+            "value": "high",
+            "label": "High"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          }
+        ]
+      }
+    ],
+    "contentSections": [
+      {
+        "id": "battle-notes",
+        "title": "战斗场景说明",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "不同规模的战斗会带来不同负载。真实报告应记录地图、兵种、单位规模和采样方法。"
+          },
+          {
+            "type": "table",
+            "caption": "游戏专属字段示例",
+            "columns": [
+              {
+                "key": "setting",
+                "label": "设置"
+              },
+              {
+                "key": "reason",
+                "label": "记录原因"
+              }
+            ],
+            "rows": [
+              {
+                "setting": "Unit size",
+                "reason": "保证不同测试的同屏单位数量一致。"
+              },
+              {
+                "setting": "Shadow quality",
+                "reason": "明确画质与分辨率的具体组合。"
+              }
+            ]
+          },
+          {
+            "type": "callout",
+            "tone": "info",
+            "text": "不支持的功能标记 unsupported，不会和关闭或未测混淆。"
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "olares-one",
+      "name": "Olares One",
+      "productUrl": "https://shop.olares.com/products/olares-one"
+    },
+    {
+      "id": "example-host-b",
+      "name": "Example host B (fictional)",
+      "productUrl": null
+    }
+  ],
+  "reports": [
+    {
+      "schemaVersion": 1,
+      "id": "report-warhammer-a",
+      "gameId": "total-war-warhammer-3",
+      "deviceId": "olares-one",
+      "reviewStatus": "reviewed",
+      "testedFrom": "2026-10-01",
+      "testedTo": "2026-10-01",
+      "verifiedAt": "2026-10-02",
+      "supersedesReportId": null,
+      "provenance": {
+        "sourceId": "source-os-a",
+        "sourceRevision": "example-revision-1",
+        "retrievedAt": "2026-10-02T10:00:00+08:00",
+        "reviewedBy": "example-reviewer",
+        "reviewedAt": "2026-10-02T15:00:00+08:00"
+      },
+      "hardware": {
+        "cpu": "Example CPU",
+        "gpu": "Example GPU",
+        "ramGb": 96,
+        "vramGb": 24,
+        "gpuPowerLimitW": 175
+      },
+      "software": {
+        "os": {
+          "name": "Olares OS",
+          "version": "example-os-a",
+          "build": "example-build-a"
+        },
+        "gpuDriverVersion": "example-driver-a",
+        "steamAppVersion": "example-app-a",
+        "steamChartVersion": "example-chart-a",
+        "steamClientVersion": "example-steam-a",
+        "gameVersion": "example-game-version-a",
+        "gameBuildId": "example-game-build-a"
+      },
+      "resources": {
+        "cpuLimit": {
+          "value": 18,
+          "unit": "cores"
+        },
+        "memoryLimitGb": 64,
+        "powerMode": "performance"
+      },
+      "profiles": [
+        {
+          "id": "profile-a-direct-1440p",
+          "label": "1440p · Large armies",
+          "playMode": "direct",
+          "outputResolution": {
+            "width": 2560,
+            "height": 1440
+          },
+          "runtime": {
+            "type": "proton",
+            "channel": "stable",
+            "version": "example-proton-a",
+            "build": "example-runtime-build-a"
+          },
+          "overlayGateway": "disabled",
+          "graphics": {
+            "preset": "High",
+            "presetModified": true,
+            "api": "DX11",
+            "vsync": "disabled",
+            "frameLimit": {
+              "mode": "unlimited",
+              "fps": null
+            },
+            "refreshRateHz": 120,
+            "upscaling": {
+              "state": "unsupported"
+            },
+            "frameGeneration": {
+              "state": "unsupported"
+            },
+            "rayTracing": {
+              "state": "unsupported"
+            },
+            "pathTracing": {
+              "state": "unsupported"
+            },
+            "rayReconstruction": {
+              "state": "unsupported"
+            }
+          },
+          "gameSettings": [
+            {
+              "key": "unitSize",
+              "value": "ultra"
+            },
+            {
+              "key": "shadowQuality",
+              "value": "high"
+            }
+          ],
+          "streaming": null
+        }
+      ],
+      "tests": [
+        {
+          "id": "test-a-direct-1440p",
+          "profileId": "profile-a-direct-1440p",
+          "testedAt": "2026-10-01T10:00:00+08:00",
+          "method": {
+            "type": "fixed_route",
+            "scenario": "Fictional saved-game route A; same save, route and camera movements.",
+            "durationSeconds": 600,
+            "warmupSeconds": 120,
+            "includesLoading": false,
+            "captureTool": "MangoHud",
+            "captureToolVersion": "example-tool-a",
+            "calculationMethod": "tool_summary",
+            "repeatGroupId": null
+          },
+          "metrics": {
+            "game": {
+              "avgFps": 48,
+              "onePercentLowFps": 19,
+              "minFps": 12,
+              "frameBasis": "rendered"
+            },
+            "display": null,
+            "streaming": null
+          },
+          "outcome": "completed",
+          "observations": [],
+          "evidenceIds": [
+            "evidence-a-direct"
+          ]
+        }
+      ],
+      "assessment": {
+        "status": "runs_poorly",
+        "summary": "虚构样本：可以进入游戏，但低帧表现影响体验。",
+        "scope": {
+          "playModes": [
+            "direct"
+          ],
+          "featuresTested": [
+            "single_player_fixed_route"
+          ]
+        },
+        "basedOnTestIds": [
+          "test-a-direct-1440p"
+        ],
+        "issues": [
+          "示例用较低的 1% Low 演示体验受限状态，并非实际游戏结论。"
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "recommendation-a-direct",
+          "label": "1440p / 大规模战斗",
+          "goal": "balanced",
+          "profileId": "profile-a-direct-1440p",
+          "basedOnTestIds": [
+            "test-a-direct-1440p"
+          ],
+          "basis": "tested",
+          "rationale": "Illustrates a recommendation tied to the historical environment.",
+          "limitations": [
+            "此示例配置仍有明显低帧问题，展示推荐不等于保证流畅。"
+          ]
+        }
+      ]
+    }
+  ],
+  "internalAudit": {
+    "exportPolicy": "Build tools must explicitly project public fields; do not ship this bundle or internalAudit verbatim to the browser.",
+    "sources": [
+      {
+        "id": "source-os-a",
+        "type": "example_placeholder",
+        "url": "https://example.invalid/reports/os-a",
+        "revision": "example-revision-1"
+      },
+      {
+        "id": "source-os-b",
+        "type": "example_placeholder",
+        "url": "https://example.invalid/reports/os-b",
+        "revision": "example-revision-2"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "evidence-a-direct",
+        "sourceId": "source-os-a",
+        "sourceRecordId": "example-row-a1",
+        "type": "host_log",
+        "url": "https://example.invalid/evidence/a-direct.csv"
+      },
+      {
+        "id": "evidence-b-direct",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b1",
+        "type": "host_log",
+        "url": "https://example.invalid/evidence/b-direct.csv"
+      },
+      {
+        "id": "evidence-b-stream-host",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b2",
+        "type": "host_log",
+        "url": "https://example.invalid/evidence/b-stream.csv"
+      },
+      {
+        "id": "evidence-b-display",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b2",
+        "type": "display_log",
+        "url": "https://example.invalid/evidence/b-display.csv"
+      },
+      {
+        "id": "evidence-b-stream-overlay",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b2",
+        "type": "streaming_overlay",
+        "url": "https://example.invalid/evidence/b-moonlight.png"
+      }
+    ]
+  }
+}

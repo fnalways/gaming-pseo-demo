@@ -1,0 +1,796 @@
+{
+  "schemaVersion": 1,
+  "exampleOnly": true,
+  "exampleNotice": "仅用于演示数据结构。所有测试数值、日期、版本、评级、审核和推荐均为虚构示例，不代表赛博朋克 2077 或 Olares 的真实表现。example.invalid 链接为占位符。禁止作为正式测试结果发布。",
+  "game": {
+    "id": "cyberpunk-2077",
+    "slug": "cyberpunk-2077",
+    "name": "Cyberpunk 2077",
+    "locale": "en",
+    "aliases": [
+      "赛博朋克 2077",
+      "Cyberpunk2077"
+    ],
+    "genres": [
+      "RPG",
+      "Open world"
+    ],
+    "intro": "选择直连或本地串流，查看夜之城的配置与性能示例。",
+    "publication": {
+      "status": "draft",
+      "indexable": false,
+      "publishedAt": null,
+      "updatedAt": "2026-10-22T16:00:00+08:00"
+    },
+    "cover": {
+      "src": "/assets/settings.svg",
+      "alt": "Cyberpunk 2077 cover artwork",
+      "width": 1200,
+      "height": 675
+    },
+    "store": {
+      "platform": "steam",
+      "appId": null,
+      "url": null
+    },
+    "seo": {
+      "title": "Cyberpunk 2077 on Olares One: Performance & Settings",
+      "description": "Explore Cyberpunk 2077 performance, test conditions and recommended settings on Olares One.",
+      "ogImage": "/assets/settings.svg"
+    },
+    "defaultDeviceId": "olares-one",
+    "currentReportByDevice": {
+      "olares-one": "report-one-os-b",
+      "example-host-b": null
+    },
+    "relatedGameIds": [],
+    "discussionUrl": null,
+    "settingDefinitions": [
+      {
+        "key": "crowdDensity",
+        "label": "Crowd density",
+        "group": "Gameplay",
+        "type": "enum",
+        "options": [
+          {
+            "value": "low",
+            "label": "Low"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "high",
+            "label": "High"
+          }
+        ]
+      },
+      {
+        "key": "textureQuality",
+        "label": "Texture quality",
+        "group": "Graphics",
+        "type": "enum",
+        "options": [
+          {
+            "value": "low",
+            "label": "Low"
+          },
+          {
+            "value": "medium",
+            "label": "Medium"
+          },
+          {
+            "value": "high",
+            "label": "High"
+          }
+        ]
+      },
+      {
+        "key": "fieldOfView",
+        "label": "Field of view",
+        "group": "Graphics",
+        "type": "number",
+        "unit": "degrees",
+        "minimum": 70,
+        "maximum": 100
+      }
+    ],
+    "contentSections": [
+      {
+        "id": "reading-results",
+        "title": "How to read these results",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Choose a host device and check the system version before comparing results. Each performance row refers to a specific configuration."
+          },
+          {
+            "type": "callout",
+            "tone": "info",
+            "text": "This is a demonstration page. All benchmark values in this example are fictional."
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Game FPS measures the game running on the host.",
+              "Streaming FPS measures the video delivered to the client.",
+              "Results from different test conditions may not be directly comparable."
+            ]
+          },
+          {
+            "type": "table",
+            "caption": "Metric definitions",
+            "columns": [
+              {
+                "key": "metric",
+                "label": "Metric"
+              },
+              {
+                "key": "meaning",
+                "label": "Meaning"
+              }
+            ],
+            "rows": [
+              {
+                "metric": "Avg. FPS",
+                "meaning": "Average game frame rate during the recorded test."
+              },
+              {
+                "metric": "1% low FPS",
+                "meaning": "A measure of slower frames; it is not the minimum FPS."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "setup",
+        "title": "Before you play",
+        "blocks": [
+          {
+            "type": "steps",
+            "items": [
+              {
+                "title": "Select your host",
+                "text": "Check the hardware and OS version in System details."
+              },
+              {
+                "title": "Choose a configuration",
+                "text": "Select a recommendation for your play mode and resolution."
+              },
+              {
+                "title": "Apply the settings",
+                "text": "Use the values shown in the selected recommendation."
+              }
+            ]
+          },
+          {
+            "type": "image",
+            "src": "/assets/settings.svg",
+            "alt": "Example graphics settings screen",
+            "caption": "Placeholder image for the setup guide.",
+            "width": 1920,
+            "height": 1080
+          }
+        ]
+      },
+      {
+        "id": "faq",
+        "title": "Frequently asked questions",
+        "blocks": [
+          {
+            "type": "faq",
+            "items": [
+              {
+                "question": "Does an unverified device mean the game cannot run?",
+                "answer": "No. It means there is no reviewed result for that device."
+              },
+              {
+                "question": "Do these results apply to every OS version?",
+                "answer": "Results apply to the versions listed in the selected report."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "devices": [
+    {
+      "id": "olares-one",
+      "name": "Olares One",
+      "productUrl": "https://shop.olares.com/products/olares-one"
+    },
+    {
+      "id": "example-host-b",
+      "name": "Example host B (fictional)",
+      "productUrl": null
+    }
+  ],
+  "reports": [
+    {
+      "schemaVersion": 1,
+      "id": "report-one-os-a",
+      "gameId": "cyberpunk-2077",
+      "deviceId": "olares-one",
+      "reviewStatus": "reviewed",
+      "testedFrom": "2026-10-01",
+      "testedTo": "2026-10-01",
+      "verifiedAt": "2026-10-02",
+      "supersedesReportId": null,
+      "provenance": {
+        "sourceId": "source-os-a",
+        "sourceRevision": "example-revision-1",
+        "retrievedAt": "2026-10-02T10:00:00+08:00",
+        "reviewedBy": "example-reviewer",
+        "reviewedAt": "2026-10-02T15:00:00+08:00"
+      },
+      "hardware": {
+        "cpu": "Example CPU",
+        "gpu": "Example GPU",
+        "ramGb": 96,
+        "vramGb": 24,
+        "gpuPowerLimitW": 175
+      },
+      "software": {
+        "os": {
+          "name": "Olares OS",
+          "version": "example-os-a",
+          "build": "example-build-a"
+        },
+        "gpuDriverVersion": "example-driver-a",
+        "steamAppVersion": "example-app-a",
+        "steamChartVersion": "example-chart-a",
+        "steamClientVersion": "example-steam-a",
+        "gameVersion": "example-game-version-a",
+        "gameBuildId": "example-game-build-a"
+      },
+      "resources": {
+        "cpuLimit": {
+          "value": 18,
+          "unit": "cores"
+        },
+        "memoryLimitGb": 64,
+        "powerMode": "performance"
+      },
+      "profiles": [
+        {
+          "id": "profile-a-direct-1440p",
+          "label": "Direct display · 1440p",
+          "playMode": "direct",
+          "outputResolution": {
+            "width": 2560,
+            "height": 1440
+          },
+          "runtime": {
+            "type": "proton",
+            "channel": "stable",
+            "version": "example-proton-a",
+            "build": "example-runtime-build-a"
+          },
+          "overlayGateway": "disabled",
+          "graphics": {
+            "preset": "High",
+            "presetModified": true,
+            "api": "DX12",
+            "vsync": "disabled",
+            "frameLimit": {
+              "mode": "unlimited",
+              "fps": null
+            },
+            "refreshRateHz": 120,
+            "upscaling": {
+              "state": "enabled",
+              "technology": "DLSS",
+              "mode": "balanced"
+            },
+            "frameGeneration": {
+              "state": "disabled",
+              "technology": null,
+              "modeLabel": null
+            },
+            "rayTracing": {
+              "state": "disabled",
+              "mode": null
+            },
+            "pathTracing": {
+              "state": "disabled"
+            },
+            "rayReconstruction": {
+              "state": "disabled"
+            }
+          },
+          "gameSettings": [
+            {
+              "key": "crowdDensity",
+              "value": "low"
+            },
+            {
+              "key": "textureQuality",
+              "value": "high"
+            },
+            {
+              "key": "fieldOfView",
+              "value": 80
+            }
+          ],
+          "streaming": null
+        }
+      ],
+      "tests": [
+        {
+          "id": "test-a-direct-1440p",
+          "profileId": "profile-a-direct-1440p",
+          "testedAt": "2026-10-01T10:00:00+08:00",
+          "method": {
+            "type": "fixed_route",
+            "scenario": "Fictional saved-game route A; same save, route and camera movements.",
+            "durationSeconds": 600,
+            "warmupSeconds": 120,
+            "includesLoading": false,
+            "captureTool": "MangoHud",
+            "captureToolVersion": "example-tool-a",
+            "calculationMethod": "tool_summary",
+            "repeatGroupId": null
+          },
+          "metrics": {
+            "game": {
+              "avgFps": 80,
+              "onePercentLowFps": 50,
+              "minFps": 35,
+              "frameBasis": "rendered"
+            },
+            "display": null,
+            "streaming": null
+          },
+          "outcome": "completed",
+          "observations": [],
+          "evidenceIds": [
+            "evidence-a-direct"
+          ]
+        }
+      ],
+      "assessment": {
+        "status": "playable",
+        "summary": "Illustrative historical result with a limited test scope.",
+        "scope": {
+          "playModes": [
+            "direct"
+          ],
+          "featuresTested": [
+            "single_player_fixed_route"
+          ]
+        },
+        "basedOnTestIds": [
+          "test-a-direct-1440p"
+        ],
+        "issues": [
+          "Streaming and long-session stability were not tested in this example report."
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "recommendation-a-direct",
+          "label": "Historical 1440p configuration",
+          "goal": "balanced",
+          "profileId": "profile-a-direct-1440p",
+          "basedOnTestIds": [
+            "test-a-direct-1440p"
+          ],
+          "basis": "tested",
+          "rationale": "Illustrates a recommendation tied to the historical environment.",
+          "limitations": [
+            "Fictional example; this report is not the current selection."
+          ]
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "id": "report-one-os-b",
+      "gameId": "cyberpunk-2077",
+      "deviceId": "olares-one",
+      "reviewStatus": "reviewed",
+      "testedFrom": "2026-10-20",
+      "testedTo": "2026-10-21",
+      "verifiedAt": "2026-10-22",
+      "supersedesReportId": "report-one-os-a",
+      "provenance": {
+        "sourceId": "source-os-b",
+        "sourceRevision": "example-revision-2",
+        "retrievedAt": "2026-10-22T10:00:00+08:00",
+        "reviewedBy": "example-reviewer",
+        "reviewedAt": "2026-10-22T15:00:00+08:00"
+      },
+      "hardware": {
+        "cpu": "Example CPU",
+        "gpu": "Example GPU",
+        "ramGb": 96,
+        "vramGb": 24,
+        "gpuPowerLimitW": 175
+      },
+      "software": {
+        "os": {
+          "name": "Olares OS",
+          "version": "example-os-b",
+          "build": "example-build-b"
+        },
+        "gpuDriverVersion": "example-driver-a",
+        "steamAppVersion": "example-app-a",
+        "steamChartVersion": "example-chart-a",
+        "steamClientVersion": "example-steam-a",
+        "gameVersion": "example-game-version-a",
+        "gameBuildId": "example-game-build-a"
+      },
+      "resources": {
+        "cpuLimit": {
+          "value": 18,
+          "unit": "cores"
+        },
+        "memoryLimitGb": 64,
+        "powerMode": "performance"
+      },
+      "profiles": [
+        {
+          "id": "profile-b-direct-1440p",
+          "label": "Direct display · 1440p",
+          "playMode": "direct",
+          "outputResolution": {
+            "width": 2560,
+            "height": 1440
+          },
+          "runtime": {
+            "type": "proton",
+            "channel": "stable",
+            "version": "example-proton-a",
+            "build": "example-runtime-build-a"
+          },
+          "overlayGateway": "disabled",
+          "graphics": {
+            "preset": "High",
+            "presetModified": true,
+            "api": "DX12",
+            "vsync": "disabled",
+            "frameLimit": {
+              "mode": "unlimited",
+              "fps": null
+            },
+            "refreshRateHz": 120,
+            "upscaling": {
+              "state": "enabled",
+              "technology": "DLSS",
+              "mode": "balanced"
+            },
+            "frameGeneration": {
+              "state": "disabled",
+              "technology": null,
+              "modeLabel": null
+            },
+            "rayTracing": {
+              "state": "disabled",
+              "mode": null
+            },
+            "pathTracing": {
+              "state": "disabled"
+            },
+            "rayReconstruction": {
+              "state": "disabled"
+            }
+          },
+          "gameSettings": [
+            {
+              "key": "crowdDensity",
+              "value": "low"
+            },
+            {
+              "key": "textureQuality",
+              "value": "high"
+            },
+            {
+              "key": "fieldOfView",
+              "value": 80
+            }
+          ],
+          "streaming": null
+        },
+        {
+          "id": "profile-b-stream-2160p-fg",
+          "label": "Streaming · 2160p · Frame generation 3x",
+          "playMode": "streaming",
+          "outputResolution": {
+            "width": 3840,
+            "height": 2160
+          },
+          "runtime": {
+            "type": "proton",
+            "channel": "stable",
+            "version": "example-proton-a",
+            "build": "example-runtime-build-a"
+          },
+          "overlayGateway": "enabled",
+          "graphics": {
+            "preset": "High",
+            "presetModified": true,
+            "api": "DX12",
+            "vsync": "disabled",
+            "frameLimit": {
+              "mode": "unlimited",
+              "fps": null
+            },
+            "refreshRateHz": 120,
+            "upscaling": {
+              "state": "enabled",
+              "technology": "DLSS",
+              "mode": "quality"
+            },
+            "frameGeneration": {
+              "state": "enabled",
+              "technology": "DLSS",
+              "modeLabel": "3x"
+            },
+            "rayTracing": {
+              "state": "enabled",
+              "mode": "Ultra"
+            },
+            "pathTracing": {
+              "state": "disabled"
+            },
+            "rayReconstruction": {
+              "state": "enabled"
+            }
+          },
+          "gameSettings": [
+            {
+              "key": "crowdDensity",
+              "value": "low"
+            },
+            {
+              "key": "textureQuality",
+              "value": "high"
+            },
+            {
+              "key": "fieldOfView",
+              "value": 80
+            }
+          ],
+          "streaming": {
+            "hostSoftware": {
+              "name": "Sunshine",
+              "version": "example-sunshine-a"
+            },
+            "clientSoftware": {
+              "name": "Moonlight",
+              "version": "example-moonlight-a"
+            },
+            "clientDevice": {
+              "model": "Example streaming client",
+              "os": "Example client OS",
+              "osVersion": "example-client-version-a",
+              "displayResolution": {
+                "width": 3840,
+                "height": 2160
+              },
+              "displayRefreshRateHz": 120
+            },
+            "resolution": {
+              "width": 3840,
+              "height": 2160
+            },
+            "targetFps": 120,
+            "bitrateMbps": 80,
+            "codec": "AV1",
+            "hdr": "disabled",
+            "network": {
+              "scope": "lan",
+              "hostConnection": "ethernet",
+              "clientConnection": "ethernet",
+              "routerModel": "Example router",
+              "notes": "Fictional wired LAN setup; not representative of all home networks."
+            }
+          }
+        }
+      ],
+      "tests": [
+        {
+          "id": "test-b-direct-1440p",
+          "profileId": "profile-b-direct-1440p",
+          "testedAt": "2026-10-20T10:00:00+08:00",
+          "method": {
+            "type": "fixed_route",
+            "scenario": "Fictional saved-game route A; same save, route and camera movements.",
+            "durationSeconds": 600,
+            "warmupSeconds": 120,
+            "includesLoading": false,
+            "captureTool": "MangoHud",
+            "captureToolVersion": "example-tool-a",
+            "calculationMethod": "tool_summary",
+            "repeatGroupId": null
+          },
+          "metrics": {
+            "game": {
+              "avgFps": 86,
+              "onePercentLowFps": 56,
+              "minFps": 40,
+              "frameBasis": "rendered"
+            },
+            "display": null,
+            "streaming": null
+          },
+          "outcome": "completed",
+          "observations": [],
+          "evidenceIds": [
+            "evidence-b-direct"
+          ]
+        },
+        {
+          "id": "test-b-stream-2160p-fg",
+          "profileId": "profile-b-stream-2160p-fg",
+          "testedAt": "2026-10-21T10:00:00+08:00",
+          "method": {
+            "type": "fixed_route",
+            "scenario": "Fictional saved-game route A; same save, route and camera movements.",
+            "durationSeconds": 600,
+            "warmupSeconds": 120,
+            "includesLoading": false,
+            "captureTool": "Example host frame capture",
+            "captureToolVersion": "example-tool-b",
+            "calculationMethod": "rendered_frames_only",
+            "repeatGroupId": null
+          },
+          "metrics": {
+            "game": {
+              "avgFps": 40,
+              "onePercentLowFps": 28,
+              "minFps": 22,
+              "frameBasis": "rendered"
+            },
+            "display": {
+              "avgFps": 112,
+              "onePercentLowFps": null,
+              "frameBasis": "includes_generated",
+              "captureTool": "Example display frame capture",
+              "captureToolVersion": "example-tool-c",
+              "calculationMethod": "all_presented_frames",
+              "missingReasons": {
+                "onePercentLowFps": "Not collected in this fictional example."
+              },
+              "evidenceIds": [
+                "evidence-b-display"
+              ]
+            },
+            "streaming": {
+              "captureTool": "Moonlight Statistics Overlay",
+              "captureToolVersion": "example-moonlight-a",
+              "samplingMethod": "Overlay snapshot at the end of the run; values use the client statistics window.",
+              "incomingFps": 119.8,
+              "renderedFps": 119.5,
+              "networkRttMs": 2.5,
+              "decodingTimeMs": 1.2,
+              "networkDroppedFramesPercent": 0.1,
+              "evidenceIds": [
+                "evidence-b-stream-overlay"
+              ]
+            }
+          },
+          "outcome": "completed",
+          "observations": [
+            "Fictional illustration of separating rendered game FPS, generated-frame output and streaming FPS."
+          ],
+          "evidenceIds": [
+            "evidence-b-stream-host",
+            "evidence-b-display",
+            "evidence-b-stream-overlay"
+          ]
+        }
+      ],
+      "assessment": {
+        "status": "playable",
+        "summary": "Illustrative result for the listed configurations only.",
+        "scope": {
+          "playModes": [
+            "direct",
+            "streaming"
+          ],
+          "featuresTested": [
+            "single_player_fixed_route"
+          ]
+        },
+        "basedOnTestIds": [
+          "test-b-direct-1440p",
+          "test-b-stream-2160p-fg"
+        ],
+        "issues": [
+          "Example scope covers a fixed route, not a full playthrough or long-session stability.",
+          "The streaming example requires the specified client and network conditions."
+        ]
+      },
+      "recommendations": [
+        {
+          "id": "recommendation-b-direct",
+          "label": "1440p direct display",
+          "goal": "balanced",
+          "profileId": "profile-b-direct-1440p",
+          "basedOnTestIds": [
+            "test-b-direct-1440p"
+          ],
+          "basis": "tested",
+          "rationale": "Illustrates a recommendation based on this exact configuration.",
+          "limitations": [
+            "Fictional example, not an actual product recommendation."
+          ]
+        },
+        {
+          "id": "recommendation-b-stream",
+          "label": "2160p local streaming with frame generation",
+          "goal": "image_quality",
+          "profileId": "profile-b-stream-2160p-fg",
+          "basedOnTestIds": [
+            "test-b-stream-2160p-fg"
+          ],
+          "basis": "tested",
+          "rationale": "Illustrates a separate resolution and settings profile for streaming.",
+          "limitations": [
+            "Fictional example, not an actual product recommendation.",
+            "Generated-frame output must not be presented as rendered game FPS."
+          ]
+        }
+      ]
+    }
+  ],
+  "internalAudit": {
+    "exportPolicy": "Build tools must explicitly project public fields; do not ship this bundle or internalAudit verbatim to the browser.",
+    "sources": [
+      {
+        "id": "source-os-a",
+        "type": "example_placeholder",
+        "url": "https://example.invalid/reports/os-a",
+        "revision": "example-revision-1"
+      },
+      {
+        "id": "source-os-b",
+        "type": "example_placeholder",
+        "url": "https://example.invalid/reports/os-b",
+        "revision": "example-revision-2"
+      }
+    ],
+    "evidence": [
+      {
+        "id": "evidence-a-direct",
+        "sourceId": "source-os-a",
+        "sourceRecordId": "example-row-a1",
+        "type": "host_log",
+        "url": "https://example.invalid/evidence/a-direct.csv"
+      },
+      {
+        "id": "evidence-b-direct",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b1",
+        "type": "host_log",
+        "url": "https://example.invalid/evidence/b-direct.csv"
+      },
+      {
+        "id": "evidence-b-stream-host",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b2",
+        "type": "host_log",
+        "url": "https://example.invalid/evidence/b-stream.csv"
+      },
+      {
+        "id": "evidence-b-display",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b2",
+        "type": "display_log",
+        "url": "https://example.invalid/evidence/b-display.csv"
+      },
+      {
+        "id": "evidence-b-stream-overlay",
+        "sourceId": "source-os-b",
+        "sourceRecordId": "example-row-b2",
+        "type": "streaming_overlay",
+        "url": "https://example.invalid/evidence/b-moonlight.png"
+      }
+    ]
+  }
+}
