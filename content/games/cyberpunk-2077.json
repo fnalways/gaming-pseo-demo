@@ -15,7 +15,7 @@
       "RPG",
       "Open world"
     ],
-    "intro": "Explore configurations and sample performance for direct display and local streaming.",
+    "intro": "Compare sample configurations for direct display and local streaming, with results organized by host device and Olares OS version.",
     "publication": {
       "status": "draft",
       "indexable": false,
