@@ -3,3 +3,7 @@ dist/
 .vercel/
 .env*
 .DS_Store
+
+# Override developer-global ignores for build scripts.
+!/scripts/
+!/scripts/**

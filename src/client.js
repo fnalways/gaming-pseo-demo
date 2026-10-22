@@ -7,7 +7,7 @@ function filterCards() {
     card.hidden = !match;
     if (match) visible++;
   }
-  document.querySelector('#result-count').textContent = `${visible} 款游戏`;
+  document.querySelector('#result-count').textContent = `${visible} games`;
   document.querySelector('#empty-search').hidden = visible > 0;
 }
 search?.addEventListener('input', filterCards);
@@ -28,7 +28,7 @@ if (device && report) {
   function render() {
     const template = document.getElementById(report.value ? `template-${report.value}` : 'template-unverified');
     document.querySelector('#report-view').replaceChildren(template.content.cloneNode(true));
-    document.querySelector('#selection-note').textContent = report.value ? `正在查看：${device.selectedOptions[0].textContent} / ${report.selectedOptions[0].textContent}` : '该主机暂无验证记录。';
+    document.querySelector('#selection-note').textContent = report.value ? `Viewing: ${device.selectedOptions[0].textContent} / ${report.selectedOptions[0].textContent}` : 'No verified report for this host.';
   }
   function writeUrl() {
     const url = new URL(location.href);

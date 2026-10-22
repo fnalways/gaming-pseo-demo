@@ -1,6 +1,5 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
 import { loadGames, validate, publicData } from '../src/data.mjs';
 import { detail, blocks, reportView } from '../src/render.mjs';
 const games = await loadGames();
@@ -67,5 +66,5 @@ test('games can define different settings without changing the renderer', () => 
   const b = publicData(games.find(b => b.game.slug === 'total-war-warhammer-3'));
   const html = detail(b, []);
   assert.ok(html.includes('Unit size'));
-  assert.ok(html.includes('不支持'));
+  assert.ok(html.includes('Unsupported'));
 });

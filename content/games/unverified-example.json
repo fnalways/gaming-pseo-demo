@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "exampleOnly": true,
-  "exampleNotice": "仅用于演示数据结构。所有测试数值、日期、版本、评级、审核和推荐均为虚构示例，不代表赛博朋克 2077 或 Olares 的真实表现。example.invalid 链接为占位符。禁止作为正式测试结果发布。",
+  "exampleNotice": "Structure demo only. All metrics, dates, versions, assessments, reviews and recommendations are fictional. Not official benchmark data.",
   "game": {
     "id": "unverified-example",
     "slug": "unverified-example",
-    "name": "下一款游戏",
+    "name": "The next game",
     "locale": "en",
     "aliases": [
       "未验证"
@@ -13,7 +13,7 @@
     "genres": [
       "Coming next"
     ],
-    "intro": "一个空白的起点：没有测试记录时，页面会明确显示尚未验证。",
+    "intro": "A blank starting point: games without a test report are clearly marked Not verified.",
     "publication": {
       "status": "draft",
       "indexable": false,
@@ -32,8 +32,8 @@
       "url": null
     },
     "seo": {
-      "title": "尚未验证示例 — Gaming Lab",
-      "description": "一个空白的起点：没有测试记录时，页面会明确显示尚未验证。",
+      "title": "Not verified example — Gaming Lab",
+      "description": "A blank starting point: games without a test report are clearly marked Not verified.",
       "ogImage": "/assets/settings.svg"
     },
     "defaultDeviceId": "olares-one",
@@ -93,7 +93,7 @@
   ],
   "reports": [],
   "internalAudit": {
-    "exportPolicy": "Build tools must explicitly project public fields; do not ship this bundle or internalAudit verbatim to the browser.",
+    "exportPolicy": "Only explicitly projected public fields may be included in the website.",
     "sources": [],
     "evidence": []
   }
